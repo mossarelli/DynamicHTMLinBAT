@@ -44,9 +44,6 @@ REM Find all _BATCH.bat in child folders:
 FOR /F "delims=|" %%A IN ('DIR /B /S _BATCH.bat') DO (
 	REM Call the _BATCH.bat file:
 	CALL "%%A" %%~dpA
-	REM Debug:
-	REM CDN is Current Directory Name:
-	@ECHO.%CDN%
 )
 
 FOR /F "delims=|" %%A IN ('DIR /B /S Index.html') DO (
