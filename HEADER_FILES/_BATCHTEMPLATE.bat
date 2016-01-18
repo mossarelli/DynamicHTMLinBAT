@@ -50,6 +50,6 @@ FOR /f "tokens=*" %%A in ('DIR /a-d /b') DO (
 		@ECHO.%TAB%^</tr^>%WTF%
 	) else (
 		REM Debug:
-		@ECHO.
+		REM @ECHO.
 	)
 )
