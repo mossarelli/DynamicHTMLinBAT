@@ -32,7 +32,7 @@ REM Clear screen of text:
 CLS
 
 REM Set this off to turn off debugging:
-@ECHO ON
+@ECHO OFF
 
 REM Init variables:
 CALL "_VARIABLES.bat"
@@ -44,11 +44,6 @@ REM Find all _BATCH.bat in child folders:
 FOR /F "delims=|" %%A IN ('DIR /B /S _BATCH.bat') DO (
 	REM Call the _BATCH.bat file:
 	CALL "%%A" %%~dpA
-)
-
-FOR /F "delims=|" %%A IN ('DIR /B /S Index.html') DO (
-	REM For debug:
-	@ECHO.
 )
 
 REM Debug:
