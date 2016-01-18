@@ -1,4 +1,22 @@
+:: ***********************************************************************
+:: 
+:: TITLE:
+:: _FUNCTIONS.bat
+:: 
+:: FILE PURPOSE:
+:: Start this file in order to use the program.
+:: 
+:: CREATED BY:
+:: Mossarelli
+:: 
+:: LICENSE: BSD
+:: 
+:: Long version of license is in START.bat.
+:: 
+:: ***********************************************************************
+
 call %* 
+
 exit /b
 
 :showThousands  inVar  outVar

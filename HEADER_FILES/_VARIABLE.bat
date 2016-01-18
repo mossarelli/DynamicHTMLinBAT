@@ -1,4 +1,21 @@
 :: ***********************************************************************
+:: 
+:: TITLE:
+:: _VARIABLE.bat
+:: 
+:: FILE PURPOSE:
+:: Start this file in order to use the program.
+:: 
+:: CREATED BY:
+:: Mossarelli
+:: 
+:: LICENSE: BSD
+:: 
+:: Long version of license is in START.bat.
+:: 
+:: ***********************************************************************
+
+:: ***********************************************************************
 :: This is a header file for START.bat that calls it. It initialises variables.
 :: ***********************************************************************
 

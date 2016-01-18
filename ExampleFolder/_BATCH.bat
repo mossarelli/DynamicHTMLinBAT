@@ -1,9 +1,26 @@
-REM ***********************************************************************
-REM This is a batch file that creates an Index.html as output, containing the content of the folder using Dropbox links.
-REM ***********************************************************************
+:: ***********************************************************************
+:: 
+:: TITLE:
+:: _BATCH.bat
+:: 
+:: FILE PURPOSE:
+:: Start this file in order to use the program.
+:: 
+:: CREATED BY:
+:: Mossarelli
+:: 
+:: LICENSE: BSD
+:: 
+:: Long version of license is in START.bat.
+:: 
+:: ***********************************************************************
+
+:: ***********************************************************************
+:: This is a batch file that creates an Index.html as output, containing the content of the folder using Dropbox links.
+:: ***********************************************************************
 CD %1
 
-REM Delayed Expansion is necessary for the string search script.
+:: Delayed Expansion is necessary for the string search script.
 SETLOCAL EnableExtensions EnableDelayedExpansion
 
 FOR %%* in (.) DO SET CDN=%%~nx*

@@ -1,4 +1,20 @@
 :: ***********************************************************************
+:: 
+:: TITLE:
+:: _FOOTER.bat
+:: 
+:: FILE PURPOSE:
+:: Start this file in order to use the program.
+:: 
+:: CREATED BY:
+:: Mossarelli
+:: 
+:: LICENSE: BSD
+:: 
+:: Long version of license is in START.bat.
+:: 
+:: ***********************************************************************
+:: ***********************************************************************
 :: This is a footer file for any BATCH.bat that calls it. It wraps up the HTML file and finishes the script.
 :: ***********************************************************************
 
