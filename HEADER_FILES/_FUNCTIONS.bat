@@ -1,24 +1,24 @@
-:: ***********************************************************************
-::
-:: TITLE:
-:: _FUNCTIONS.bat
-::
-:: FILE PURPOSE:
-:: Contains functions called by the HTML creation file.
-::
-:: CREATED BY:
-:: Mossarelli
-::
-:: LICENSE: BSD
-::
-:: Long version of license is in START.bat.
-::
-:: ***********************************************************************
+REM ***********************************************************************
+REM
+REM TITLE:
+REM _FUNCTIONS.bat
+REM
+REM FILE PURPOSE:
+REM Contains functions called by the HTML creation file.
+REM
+REM CREATED BY:
+REM Mossarelli
+REM
+REM LICENSE: BSD
+REM
+REM Long version of license is in START.bat.
+REM
+REM ***********************************************************************
 
 call %*
-
 exit /b
-:: Calculate filesize and return Kilobytes.
+
+REM Calculate filesize and return Kilobytes.
 :showThousands  inVar  outVar
 setlocal enableDelayedExpansion
 set num=!%~1!

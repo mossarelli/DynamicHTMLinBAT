@@ -1,68 +1,70 @@
-:: ***********************************************************************
-::
-:: TITLE:
-:: START.bat
-::
-:: FILE PURPOSE:
-:: Start this file in order to use the program.
-::
-:: CREATED BY:
-:: Mossarelli
-::
-:: LICENSE: BSD
-::
-:: Permission to use, copy, modify, and/or distribute this software for any
-:: purpose with or without fee is hereby granted, provided that the above
-:: copyright notice and this permission notice appear in all copies.
-::
-:: THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
-:: AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
-:: IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
-:: DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
-:: FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
-:: DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
-:: SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
-:: CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
-:: OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
-:: OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
-::
-:: ***********************************************************************
+REM ***********************************************************************
+REM
+REM TITLE:
+REM START.bat
+REM
+REM FILE PURPOSE:
+REM Start this file in order to use the program.
+REM
+REM CREATED BY:
+REM Mossarelli
+REM
+REM LICENSE: BSD
+REM
+REM Permission to use, copy, modify, and/or distribute this software for any
+REM purpose with or without fee is hereby granted, provided that the above
+REM copyright notice and this permission notice appear in all copies.
+REM
+REM THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+REM AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+REM IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+REM DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
+REM FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+REM DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+REM SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+REM CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+REM OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+REM OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+REM
+REM ***********************************************************************
 
-:: Clear screen of text:
+REM Clear screen of text:
 CLS
 
-:: Set this off to turn off debugging:
+REM Set this off to turn off debugging:
 @ECHO ON
 
-:: Init variables:
-CALL "_VARIABLE.bat"
+REM Init variables:
+CALL "_VARIABLES.bat"
 
-:: Go up one folder:
-CD ..
+REM Go up one folder
+CD ".."
 
-:: Find all _BATCH.bat in child folders:
+REM Find all _BATCH.bat in child folders:
 FOR /F "delims=|" %%A IN ('DIR /B /S _BATCH.bat') DO (
-	:: Call the _BATCH.bat file:
+	REM Call the _BATCH.bat file:
 	CALL "%%A" %%~dpA
-	:: Debug:
-	:: CDN is Current Directory Name:
+	REM Debug:
+	REM CDN is Current Directory Name:
 	@ECHO.%CDN%
 )
 
 FOR /F "delims=|" %%A IN ('DIR /B /S Index.html') DO (
-	:: For debug:
+	REM For debug:
 	@ECHO.
 )
 
-:: Debug:
-:: for /r %%x in (BATCH.bat) do echo "%%x"
+REM Debug:
+REM for /r %%x in (BATCH.bat) do echo "%%x"
 
-:: Go back to the folder the file is in:
+REM Go back to the folder the file is in:
+CD ".."
+REM Go back to the folder where START.bat is in:
 CD HEADER_FILES
 
-:: User prompt:
-@ECHO. Script succesfull.
-@ECHO. Press Enter to quit.
+REM User prompt:
+@ECHO.Script succesfull.
+@ECHO.Press Enter to quit.
 
-:: Halt and wait for ENTER:
+REM Halt and wait for ENTER:
 PAUSE >NUL

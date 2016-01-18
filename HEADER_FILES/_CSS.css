@@ -1,72 +1,72 @@
- /*
-	* TITLE:
-	* _CSS.css
-	*
-	* FILE PURPOSE:
-	* Makes the HTML files look good.
-	*
-	* CREATED BY:
-	* Mossarelli
-	*
-	* LICENSE: BSD
-	*
-	* Long version of license is in START.bat.
-	*
-	*/
- 
+/*
+ * TITLE:
+ * _CSS.css
+ *
+ * FILE PURPOSE:
+ * Makes the HTML files look good.
+ *
+ * CREATED BY:
+ * Mossarelli
+ *
+ * LICENSE: BSD
+ *
+ * Long version of license is in START.bat.
+ *
+ */
+
 /* Body */
 body {
-	background-color: #000000;
+ background-color: #000000;
 }
 
 /* Headers */
 h1 {
-	color: orange;
-	text-align: center;
+ color: orange;
+ text-align: center;
 }
 
 /* General p */
 p {
-	text-align: center;
-	color: orange;
-	font-family: "Times New Roman";
-	font-size: 20px;
+ text-align: center;
+ color: orange;
+ font-family: "Times New Roman";
+ font-size: 20px;
 }
 
 /* Table, header and column */
 table, th, td {
-	color: orange;
-	border: 1px solid grey;
-	border-collapse: collapse;
-	margin-left:auto;
-	margin-right:auto;
+ color: orange;
+ border: 1px solid grey;
+ border-collapse: collapse;
+ margin-left:auto;
+ margin-right:auto;
 }
 
 /* Table header and column */
 th, td {
-	padding: 15px;
+ padding: 15px;
 }
 
 /* Unvisited link */
 a:link {
-	color: #3E3EFF;
-	text-decoration: none;
+ color: #3E3EFF;
+ text-decoration: none;
 }
 
 /* Visited link */
 a:visited {
-	color:  #FF28FF;
-	text-decoration: none;
+ color:  #FF28FF;
+ text-decoration: none;
 }
 
 /* Mouse over link */
 a:hover {
-	color: hotpink;
-	text-decoration: none;
+ color: hotpink;
+ text-decoration: none;
 }
 
 /* Selected link */
 a:active {
-	color: blue;
-	text-decoration: none;
+ color: blue;
+ text-decoration: none;
 }
