@@ -17,12 +17,16 @@ REM ***********************************************************************
 
 REM Blacklist, ignored files list: %TESTFILE%
 SET "TESTFILE=;Index.html;_BATCH.bat;"
+
 REM Tab charachter: %TAB%
 SET "TAB=	"
+
 REM Write to File macro:
 SET WTF=^>^>Index.html
+
 REM Dropbox user ID:
 SET DROPBOXUID=28058839
+
 REM Dropbox URL or template:
 REM CDN is Current Directory Name:
 REM CDN must be inside ! because of delayed expansion. This will put the CDN variable of the current scope inside this variable:
