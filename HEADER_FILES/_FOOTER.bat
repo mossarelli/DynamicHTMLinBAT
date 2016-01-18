@@ -1,24 +1,21 @@
 :: ***********************************************************************
-:: 
+::
 :: TITLE:
 :: _FOOTER.bat
-:: 
+::
 :: FILE PURPOSE:
-:: Start this file in order to use the program.
-:: 
+:: Footer file for the main HTML creator script. It wraps up the HTML file and finishes the table and body.
+::
 :: CREATED BY:
 :: Mossarelli
-:: 
+::
 :: LICENSE: BSD
-:: 
+::
 :: Long version of license is in START.bat.
-:: 
-:: ***********************************************************************
-:: ***********************************************************************
-:: This is a footer file for any BATCH.bat that calls it. It wraps up the HTML file and finishes the script.
+::
 :: ***********************************************************************
 
-:: HTML footer for all files:
+:: %WTF% is Write to file macro.
 @ECHO.%TAB%^<tr^>%WTF%
 @ECHO.%TAB%%TAB%^<th colspan="0"^>%WTF%
 @ECHO.%TAB%%TAB%%TAB% %WTF%

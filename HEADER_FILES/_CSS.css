@@ -1,12 +1,31 @@
+ /*
+	* TITLE:
+	* _CSS.css
+	*
+	* FILE PURPOSE:
+	* Makes the HTML files look good.
+	*
+	* CREATED BY:
+	* Mossarelli
+	*
+	* LICENSE: BSD
+	*
+	* Long version of license is in START.bat.
+	*
+	*/
+ 
+/* Body */
 body {
 	background-color: #000000;
 }
 
+/* Headers */
 h1 {
 	color: orange;
 	text-align: center;
 }
 
+/* General p */
 p {
 	text-align: center;
 	color: orange;
@@ -14,6 +33,7 @@ p {
 	font-size: 20px;
 }
 
+/* Table, header and column */
 table, th, td {
 	color: orange;
 	border: 1px solid grey;
@@ -22,29 +42,30 @@ table, th, td {
 	margin-right:auto;
 }
 
+/* Table header and column */
 th, td {
 	padding: 15px;
 }
 
-/* unvisited link */
+/* Unvisited link */
 a:link {
 	color: #3E3EFF;
 	text-decoration: none;
 }
 
-/* visited link */
+/* Visited link */
 a:visited {
 	color:  #FF28FF;
 	text-decoration: none;
 }
 
-/* mouse over link */
+/* Mouse over link */
 a:hover {
 	color: hotpink;
 	text-decoration: none;
 }
 
-/* selected link */
+/* Selected link */
 a:active {
 	color: blue;
 	text-decoration: none;

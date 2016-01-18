@@ -1,24 +1,24 @@
 :: ***********************************************************************
-:: 
+::
 :: TITLE:
 :: _FUNCTIONS.bat
-:: 
+::
 :: FILE PURPOSE:
-:: Start this file in order to use the program.
-:: 
+:: Contains functions called by the HTML creation file.
+::
 :: CREATED BY:
 :: Mossarelli
-:: 
+::
 :: LICENSE: BSD
-:: 
+::
 :: Long version of license is in START.bat.
-:: 
+::
 :: ***********************************************************************
 
-call %* 
+call %*
 
 exit /b
-
+:: Calculate filesize and return Kilobytes.
 :showThousands  inVar  outVar
 setlocal enableDelayedExpansion
 set num=!%~1!
@@ -40,18 +40,18 @@ exit /b
 
 
 :strlen <resultVar> <stringVar>
-(   
+(
   setlocal EnableDelayedExpansion
   set "s=!%~2!#"
   set "len=0"
   for %%P in (4096 2048 1024 512 256 128 64 32 16 8 4 2 1) do (
-    if "!s:~%%P,1!" NEQ "" ( 
+    if "!s:~%%P,1!" NEQ "" (
       set /a "len+=%%P"
       set "s=!s:~%%P!"
     )
   )
 )
-( 
+(
   endlocal
   set "%~1=%len%"
   exit /b
