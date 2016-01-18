@@ -25,4 +25,5 @@ REM Dropbox user ID:
 SET DROPBOXUID=28058839
 REM Dropbox URL or template:
 REM CDN is Current Directory Name:
-SET DROPBOXLINK=https://dl.dropboxusercontent.com/u/%DROPBOXUID%/%CDN%/%%A
+REM CDN must be inside ! because of delayed expansion. This will put the CDN variable of the current scope inside this variable:
+SET DROPBOXLINK=https://dl.dropboxusercontent.com/u/%DROPBOXUID%/!CDN!/%%A

@@ -28,8 +28,8 @@ FOR /f "tokens=*" %%A in ('DIR /a-d /b') DO (
 		@ECHO.%TAB%^<tr^>%WTF%
 		REM FILE
 		@ECHO.%TAB%%TAB%^<td^>%WTF%
-		REM %DROPBOXLINK% is defined in _VARIABLE.bat.
-		@ECHO.%TAB%%TAB%%TAB%^<a href="https://dl.dropboxusercontent.com/u/28058839/%CDN%/%%A"^>%%~nA^</a^>%WTF%
+		REM %DROPBOXLINK% is defined in _VARIABLE.bat. Uses !CDN!:
+		@ECHO.%TAB%%TAB%%TAB%^<a href="%DROPBOXLINK%"^>%%~nA^</a^>%WTF%
 		@ECHO.%TAB%%TAB%^</td^>%WTF%
 		REM LAST MODIFIED
 		@ECHO.%TAB%%TAB%^<td^>%WTF%
