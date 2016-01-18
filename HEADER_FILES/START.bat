@@ -28,11 +28,16 @@ REM OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 REM
 REM ***********************************************************************
 
+REM Set this off to turn off debugging:
+REM Running the program with Echo on takes much longer time than if it is off.
+REM This is because ECHO takes time to render text in the console window.
+@ECHO OFF
+
 REM Clear screen of text:
 CLS
 
-REM Set this off to turn off debugging:
-@ECHO OFF
+REM User prompt:
+@ECHO.Indexing and creating files.
 
 REM Init variables:
 CALL "_VARIABLES.bat"
@@ -56,7 +61,7 @@ CD HEADER_FILES
 
 REM User prompt:
 @ECHO.Script succesfull.
-@ECHO.Press Enter to quit.
+REM @ECHO.Press Enter to quit.
 
 REM Halt and wait for ENTER:
-PAUSE >NUL
+REM PAUSE >NUL
